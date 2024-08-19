@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foro - Nutri Vida</title>
+    <link rel="shortcut icon" href="imagenes/logo.ico" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f4f0;
+            margin: 0;
+            padding: 0;
+        }
+        .header, .footer {
+            background-color: #E7D1C9;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+        }
+        .header .logo-img {
+            width: 50px; /* Ajusta el tamaño según tus necesidades */
+            height: auto;
+            border-radius: 5px; /* Opcional, si quieres bordes redondeados */
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 10px 0;
+            flex-wrap: wrap;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav a:hover {
+            background-color: #f0e4dc;
+        }
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .banner, .sections {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 90%;
+            max-width: 1200px;
+        }
+        .banner img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .foro {
+            background-color: #f8f4f0;
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .foro h2 {
+            margin-top: 0;
+        }
+        .foro .post {
+            display: flex;
+            align-items: center;
+            background-color: #f0e4dc;
+            padding: 15px;
+            border: 1px solid #DDD;
+            margin-top: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            gap: 20px;
+        }
+        .foro .post img {
+            width: 100%;
+            max-width: 300px; /* Ajusta el tamaño según tus necesidades */
+            height: auto;
+            border-radius: 10px;
+        }
+        .foro .post .text {
+            flex: 1;
+            text-align: center;
+        }
+        .foro .post h3, .foro .post p {
+            margin: 10px 0;
+        }
+        .reuniones {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .reuniones .calendar, .reuniones .community {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #DDD;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .reuniones .calendar img, .reuniones .community img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .community iframe {
+            width: 100%;
+            height: 400px;
+        }
+        @media (max-width: 768px) {
+            .header .logo {
+                flex-direction: column;
+                align-items: center;
+            }
+            .nav {
+                flex-direction: column;
+            }
+            .nav a {
+                margin: 5px 0;
+            }
+            .foro .post {
+                flex-direction: column;
+                text-align: center;
+            }
+            .foro .post img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>FEMPOWER</h1>
+        </div>
+        <nav class="nav">
+            <b>
+                <a href="conocenos.html">Inicio</a>
+                <a href="Mentorias.html">Mentorias</a>
+                <a href="Lecturas.html">Lecturas</a>
+                <a href="Foro.html">Foro</a>
+            </b>
+        </nav>
+    </header>
+    <main class="main-content">
+        <div class="foro">
+            <h2 style="font-size: 30px; color: #D0B49F;">FORO</h2>
+            <p>Comenta tus dudas y conoce a otras emprendedoras como tú.</p>
+            <div class="post">
+                <img src="imagenes/mujeres.jpg" alt="Emprendimiento en Mujeres">
+                <div class="text">
+                    <h3 style="font-size: 24px; color: #333;">Impulsando el Emprendimiento en Mujeres</h3>
+                    <p>No te des por vencida, sigue avanzando y el éxito llegará."</p>
+                </div>
+            </div>
+        </div>
+        <div class="reuniones">
+            <div class="calendar">
+                <h2>TALLERES CREATIVOS</h2>
+                <img src="imagenes/taller.jpg" alt="Reuniones programadas" width="600">
+                <strong><h3>Fecha: 5 Septiembre 2024</h3></strong>
+                <strong>Tema:</strong> El Arte
+                <br>
+                <strong>Ponente:</strong> Carla Cevallos
+                <p>Enlace:</p>
+                <a href="https://chat.whatsapp.com/INcze3FSA1SDRYHqu1IaLI" target="_blank">
+                    <strong>https://chat.whatsapp.com/INcze3FSA1SDRYHqu1IaLI</strong>
+                </a>
+            </div>
+            <div class="padlet-embed" style="border:1px solid rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:100%;background:#F4F4F4"><p style="padding:0;margin:0"><iframe src="https://padlet.com/embed/7daz1446pc0vhvdi" frameborder="0" allow="camera;microphone;geolocation" style="width:100%;height:608px;display:block;padding:0;margin:0"></iframe></p><div style="display:flex;align-items:center;justify-content:end;margin:0;height:28px"><a href="https://padlet.com?ref=embed" style="display:block;flex-grow:0;margin:0;border:none;padding:0;text-decoration:none" target="_blank"><div style="display:flex;align-items:center;"><img src="https://padlet.net/embeds/made_with_padlet_2022.png" width="114" height="28" style="padding:0;margin:0;background:0 0;border:none;box-shadow:none" alt="Hecho con Padlet"></div></a></div></div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>© 2024 FEMPOWER - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

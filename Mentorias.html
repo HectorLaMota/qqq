@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentorías - FEMPOWER</title>
+    <link rel="shortcut icon" href="imagenes/logo.ico" />
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f4f0;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        .header, .footer {
+            background-color: #E7D1C9;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+        }
+        .header .logo-img {
+            width: 50px;
+            height: auto;
+            border-radius: 5px;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 10px 0;
+            flex-wrap: wrap;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav a:hover {
+            background-color: #f0e4dc;
+        }
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            padding-bottom: 60px;
+        }
+        .banner {
+            background-color: #f0e4dc;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .banner img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .banner-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .banner-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .reading-boxes {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+        }
+        .reading-box {
+            background-color: #f0e4dc;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: left;
+            width: 100%;
+        }
+        
+        .reading-box h2 {
+            font-size: 26px; /* Aumenta el tamaño del título */
+            margin-bottom: 15px;
+        }
+        
+        .reading-box img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .reading-box p {
+            font-size: 18px; /* Aumenta el tamaño del texto */
+            margin-bottom: 20px;
+            text-align: justify; /* Ajusta el texto para que esté justificado */
+        }
+        
+        .questions {
+            background-color: #D0B49F;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: left;
+            margin-top: 10px;
+        }
+        
+        .questions h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        
+        .questions label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .questions input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .questions input[type="submit"] {
+            background-color: #E7D1C9;
+            color: #333;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        
+        .questions input[type="submit"]:hover {
+            background-color: #d49b6f;
+        }
+        
+        .footer {
+            padding: 5px 0;
+            font-size: 14px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: #E7D1C9;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>FEMPOWER</h1>
+        </div>
+        <nav class="nav">
+            <b>
+                <a href="conocenos.html">Inicio</a>
+                <a href="Mentorias.html">Mentorias</a>
+                <a href="Lecturas.html">Lecturas</a>
+                <a href="Foro.html">Foro</a>
+            </b>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section class="banner">
+            <img src="imagenes/men.png" alt="Mentorías" width="250">
+            <div class="banner-content">
+                <div class="banner-title">Mentorías</div>
+                <p>Crea experiencias de mentoría personalizadas para un desarrollo auténtico y a tu ritmo.</p>
+                <a href="https://chat.whatsapp.com/INcze3FSA1SDRYHqu1IaLI" target="_blank">Mentorías personalizadas</a>
+            </div>
+        </section>
+        <section class="banner">
+            <img src="imagenes/class.png" alt="Clases Grabadas" width="250">
+            <div class="banner-content">
+                <h2>Clases Grabadas</h2>
+                <p>Accede a nuestra biblioteca de clases grabadas sobre diversos temas de emprendimiento, <br> desde habilidades empresariales hasta estrategias de marketing.</p>
+                <a href="clases.html">Ver Clases</a>
+            </div>
+        </section>
+        <section class="banner">
+            <img src="imagenes/pod.png" alt="Podcasts" width="250">
+            <div class="banner-content">
+                <h2>Podcasts Inspiradores</h2>
+                <p>Escucha entrevistas y charlas con expertas en el campo del emprendimiento y el desarrollo br personal. ¡Inspírate y aprende de las mejores!</p>
+                <a href="https://open.spotify.com/user/31lyz3fpoqauankysbk6l4gwrhae?si=WT4MYzmBRp-5zFbOj6UQ6Q" target="_blank">Escuchar Podcasts</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>FEMPOWER - Guayaquil, Ecuador - 2024</p>
+    </footer>
+</body>
+</html>
